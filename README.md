@@ -30,4 +30,13 @@ This is the same logic used by many basic recon tools: *“if I can establish a 
 
 ```bash
 python3 port_scanner.py --ip 127.0.0.1 --start 1 --end 1024 --timeout 0.5
+```
+
+### Saving results to a file
+
+You can optionally write all **open** ports to a file using the `--output` flag.
+
+```bash
+python3 port_scanner.py --ip 127.0.0.1 --start 1 --end 1024 --output scan_results.txt
+
 
